@@ -30,3 +30,5 @@
 *.mw
 *.synctex.gz
 *.tmp
+*.brf
+*.lof
