@@ -18,14 +18,13 @@ script:
 - mkdir _build
 - python texliveonfly.py manutencao.tex
 
-before_deploy:
+after_success:
 - git tag "v$(date +'%Y.%m.%d.%H%M')"
-- ls
 
 deploy:
   provider: releases
   api_key: $GIT_TOKEN
-  file: "./_build/manutencao.pdf"
+  file: ./_build/manutencao.pdf
   skip_cleanup: true
   on:
     branch: inst4gram
