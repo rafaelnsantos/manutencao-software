@@ -4,7 +4,12 @@ cache:
 addons:
   apt:
     packages:
-      - texlive-full
+      - texlive-publishers
+      - texlive-lang-portuguese
+      - texlive-latex-extra
+      - texlive-fonts-recommended
+      - texlive-science
+      - latex-xcolor
 
 script:
   - mkdir _build
