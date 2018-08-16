@@ -7,7 +7,6 @@ before_install:
 
 script:
 - python texliveonfly.py manutencao.tex
-- python texliveonfly.py manutencao.tex
 
 before_deploy:
 - git tag "v$(date +'%Y.%m.%d.%H%M')"
