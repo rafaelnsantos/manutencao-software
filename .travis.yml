@@ -14,6 +14,7 @@ script:
   - mkdir _build
   - python texliveonfly.py manutencao.tex
   - cd _build
+  - cat manutencao.log
   - ls
 
 deploy:
