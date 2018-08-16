@@ -20,8 +20,8 @@ addons:
 
 script:
 - python texliveonfly.py manutencao.tex
-- mkdir build
-- cp manutencao.tex build
+- mkdir _build
+- cp manutencao.tex _build/
 
 before_deploy:
 - git tag "v$(date +'%Y.%m.%d.%H%M')"
@@ -30,7 +30,7 @@ deploy:
   provider: releases
   api_key: $GIT_TOKEN
   file:
-  - ./build/manutencao.pdf
+  - ./_build/manutencao.pdf
   skip_cleanup: true
   on:
     branch: inst4gram
