@@ -18,6 +18,7 @@ script:
   - mkdir _build
   - find . -name "*.tex" -exec sh -c "iconv -f UTF-8 -t ISO-8859-1 {} > {}.iso88591"  \; -exec mv "{}".iso88591 "{}" \;
   - python texliveonfly.py manutencao.tex
+  - pdflatex -output-directory _build manutencao.tex
 
 before_deploy:
   - git tag "v$(date +'%Y.%m.%d.%H%M')"
