@@ -21,7 +21,7 @@ addons:
 script:
 - python texliveonfly.py manutencao.tex
 - mkdir _build
-- cp manutencao.tex _build/
+- cp manutencao.pdf _build/
 
 before_deploy:
 - git tag "v$(date +'%Y.%m.%d.%H%M')"
