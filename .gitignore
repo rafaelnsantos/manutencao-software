@@ -30,3 +30,6 @@
 *.mw
 *.synctex.gz
 *.tmp
+
+# build
+*.pdf
