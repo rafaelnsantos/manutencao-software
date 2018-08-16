@@ -1,6 +1,6 @@
 branches:
   only:
-  - inst4gram
+    - inst4gram
 
 cache:
   apt: true
@@ -15,8 +15,8 @@ addons:
       - texlive-science
 
 script:
-- mkdir _build
-- python texliveonfly.py manutencao.tex
+  - mkdir _build
+  - python texliveonfly.py manutencao.tex
 
 deploy:
   provider: releases
@@ -25,4 +25,4 @@ deploy:
   file: _build/**/*.pdf
   skip_cleanup: true
   on:
-    branch: inst4gram
+    tags: true
