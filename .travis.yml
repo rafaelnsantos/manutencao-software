@@ -17,7 +17,6 @@ script:
 
 deploy:
   provider: releases
-  api_key: $GIT_TOKEN
   file: 
     - ./_build/manutencao.pdf
   skip_cleanup: true
