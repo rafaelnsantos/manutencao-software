@@ -12,7 +12,7 @@ addons:
 
 script:
   - python texliveonfly.py manutencao.tex
-  - ls
+  - pdflatex -interaction=batchmode manutencao.tex
 
 deploy:
   provider: releases
