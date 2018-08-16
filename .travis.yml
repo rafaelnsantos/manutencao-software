@@ -12,12 +12,15 @@ addons:
 
 script:
   - python texliveonfly.py manutencao.tex
-  - pdflatex -interaction=batchmode manutencao.tex
+  - mkdir _build
+  - pdflatex -interaction=batchmode -output-directory _build manutencao.tex
 
 deploy:
   provider: releases
   api_key: $GIT_TOKEN
-  file: "manutencao.pdf"
+  file: 
+    - ./_build/manutencao.pdf
   skip_cleanup: true
   on:
     tags: true
+    branch: inst4gram
