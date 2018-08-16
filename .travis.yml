@@ -1,7 +1,3 @@
-branches:
-  only:
-    - inst4gram
-
 cache:
   apt: true
 
