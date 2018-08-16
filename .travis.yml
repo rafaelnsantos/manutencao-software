@@ -1,3 +1,7 @@
+branches:
+  only:
+  - inst4gram
+
 cache:
   apt: true
 
@@ -16,6 +20,8 @@ addons:
 
 script:
 - python texliveonfly.py manutencao.tex
+- mkdir build
+- cp manutencao.tex build
 
 before_deploy:
 - git tag "v$(date +'%Y.%m.%d.%H%M')"
@@ -24,7 +30,7 @@ deploy:
   provider: releases
   api_key: $GIT_TOKEN
   file:
-  - ./manutencao.pdf
+  - ./build/manutencao.pdf
   skip_cleanup: true
   on:
     branch: inst4gram
