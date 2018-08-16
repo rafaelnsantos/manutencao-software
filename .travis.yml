@@ -12,13 +12,11 @@ addons:
 
 script:
   - python texliveonfly.py manutencao.tex
-  - mkdir _build
-  - pdflatex -interaction=batchmode -output-directory _build manutencao.tex
 
 deploy:
   provider: releases
   file: 
-    - ./_build/manutencao.pdf
+    - ./manutencao.pdf
   skip_cleanup: true
   on:
     tags: true
