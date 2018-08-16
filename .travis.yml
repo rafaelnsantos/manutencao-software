@@ -13,6 +13,8 @@ addons:
 script:
   - mkdir _build
   - python texliveonfly.py manutencao.tex
+  - cd _build
+  - ls
 
 deploy:
   provider: releases
