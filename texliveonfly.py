@@ -2,7 +2,7 @@
 
 # default options; feel free to change!
 defaultCompiler = "pdflatex"
-defaultArguments = "-synctex=1 -interaction=batchmode -output-directory _build"
+defaultArguments = "-synctex=1 -interaction=batchmode"
 defaultSpeechSetting = "never"
 
 #

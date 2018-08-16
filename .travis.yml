@@ -11,14 +11,12 @@ addons:
       - texlive-science
 
 script:
-  - mkdir _build
   - python texliveonfly.py manutencao.tex
 
 deploy:
   provider: releases
   api_key: $GIT_TOKEN
-  file: "*/_build/*.pdf"
-  file_glob: true
+  file: "manutencao.pdf"
   skip_cleanup: true
   on:
     tags: true
