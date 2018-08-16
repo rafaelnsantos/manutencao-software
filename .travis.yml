@@ -26,7 +26,8 @@ before_deploy:
 deploy:
   provider: releases
   api_key: $GIT_TOKEN
-  file: _build/manutencao.pdf
+  file: 
+    - _build/manutencao.pdf
   skip_cleanup: true
   on:
-    tags: true
+    branch: inst4gram
