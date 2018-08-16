@@ -1,6 +1,6 @@
-cache:
-  apt: true
-
+branches:
+  only:
+    - alfa
 addons:
   apt:
     packages:
@@ -11,9 +11,15 @@ addons:
       - texlive-science
       - latex-xcolor
 
+cache:
+  apt: true
+
 script:
   - mkdir _build
   - python texliveonfly.py manutencao.tex
+
+before_deploy:
+  - git tag "v$(date +'%Y.%m.%d.%H%M')"
 
 deploy:
   provider: releases
@@ -22,5 +28,4 @@ deploy:
     - ./_build/manutencao.pdf
   skip_cleanup: true
   on:
-    tags: true
     branch: inst4gram
