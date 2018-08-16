@@ -17,8 +17,8 @@ script:
 deploy:
   provider: releases
   api_key: $GIT_TOKEN
+  file: "*/_build/*.pdf"
   file_glob: true
-  file: _build/**/*.pdf
   skip_cleanup: true
   on:
     tags: true
