@@ -26,3 +26,5 @@ deploy:
   file:
   - manutencao.pdf
   skip_cleanup: true
+  on:
+    branch: inst4gram
