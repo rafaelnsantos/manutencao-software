@@ -1,6 +1,6 @@
 branches:
   only:
-    - alfa
+    - inst4gram
 addons:
   apt:
     packages:
