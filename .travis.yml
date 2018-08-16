@@ -18,16 +18,11 @@ script:
 - mkdir _build
 - python texliveonfly.py manutencao.tex
 
-before_deploy:
-- git config --local user.name "travis-ci"
-- git config --local user.email "bot@travis-ci.org"
-- git tag "v$(date +'%Y.%m.%d.%H%M')"
-
 deploy:
   provider: releases
   api_key: $GIT_TOKEN
-  file: 
-    - _build/manutencao.pdf
+  file_glob: true
+  file: _build/**/*.pdf
   skip_cleanup: true
   on:
     branch: inst4gram
