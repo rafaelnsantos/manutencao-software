@@ -1,9 +1,18 @@
 cache:
   apt: true
 
-before_install:
-- sudo apt-get update 
-- sudo apt-get install texlive-publishers texlive-lang-portuguese texlive-latex-extra texlive-fonts-recommended texlive-science
+# before_install:
+# - sudo apt-get update 
+# - sudo apt-get install texlive-publishers texlive-lang-portuguese texlive-latex-extra texlive-fonts-recommended texlive-science
+
+addons:
+  apt:
+    packages:
+      - texlive-publishers
+      - texlive-lang-portuguese
+      - texlive-latex-extra
+      - texlive-fonts-recommended
+      - texlive-science
 
 script:
 - python texliveonfly.py manutencao.tex
