@@ -19,6 +19,7 @@ script:
   - find . -name "*.tex" -exec sh -c "iconv -f UTF-8 -t ISO-8859-1 {} > {}.iso88591"  \; -exec mv "{}".iso88591 "{}" \;
   - python texliveonfly.py manutencao.tex
   - python texliveonfly.py manutencao.tex
+  - python texliveonfly.py manutencao.tex
 
 before_deploy:
   - git tag "v$(date +'%Y.%m.%d.%H%M')"
