@@ -8,13 +8,13 @@
 % Size of staff for the project 
 \subsection{Tamanho da equipe para o projeto }
 
-Caroline Correa, Marco AurÈlio Souza, Rafael Santos
+Caroline Correa, Marco Aur√©lio Souza, Rafael Santos
 
 % Software 
 \section{Software}
 
 % Identify  software  needed  to  support  system  (includes  system  plus SEE/STE/tools requirements) 
-\subsection{Identificar o software necess·rio para suportar o sistema}
+\subsection{Identificar o software necess√°rio para suportar o sistema}
 
 JDK 8, MySQL, Netbeans, Git
 
@@ -22,20 +22,20 @@ JDK 8, MySQL, Netbeans, Git
 \section{Hardware}
 
 % Identify hardware needed to support system (includes system plus SEE/STE requirements) 
-\subsection{Identificar o hardware necess·rio para suportar o sistema}
+\subsection{Identificar o hardware necess√°rio para suportar o sistema}
 
 Notebook com 4gb de RAM
 
 % Facilities 
-\section{InstalaÁıes}
+\section{Instala√ß√µes}
 
 % Identify facilities requirements
-\subsection{Identificar requisitos de instalaÁıes}
+\subsection{Identificar requisitos de instala√ß√µes}
 
-Acesso ‡ internet
+Acesso √† internet
 
 % Special procedural requirements (e.g., security, access rights, and documentation control)
-\section{Requisitos processuais especiais (por exemplo, seguranÁa, direitos de acesso e documentaÁ„o ao controle)}
+\section{Requisitos processuais especiais (por exemplo, seguran√ßa, direitos de acesso e documenta√ß√£o ao controle)}
 
 \pagebreak
 
@@ -50,7 +50,7 @@ Acesso ‡ internet
 \end{figure}
 
 \begin{table}[!htb]
-	\caption[Atores]{RelaÁ„o de atores e seus respectivos pesos}
+	\caption[Atores]{Rela√ß√£o de atores e seus respectivos pesos}
 	\label{tab:correlacao}
 	\centering
 	\begin{tabular}{c|c}
@@ -61,7 +61,7 @@ Acesso ‡ internet
 \end{table}
 
 \begin{table}[!htb]
-	\caption[TPNAA]{Total de Pesos n„o ajustados dos Atores}
+	\caption[TPNAA]{Total de Pesos n√£o ajustados dos Atores}
 	\label{tab:correlacao}
 	\centering
 	\begin{tabular}{c|c|c|c}
@@ -69,88 +69,114 @@ Acesso ‡ internet
 		1 					 & 0						&	1		 &	  0 	 	\\
 		2 					 & 1						&	2		 &	  2 	 	\\
 		3 					 & 1						&	3		 &	  3 	 	\\ \hline
-		\multicolumn{4}{l}{Total de Pesos n„o Ajustados dos Atores(TPNAA) = 5}	 	\\
+		\multicolumn{4}{l}{Total de Pesos n√£o Ajustados dos Atores(TPNAA) = 5}	 	\\
 	\end{tabular}
 \end{table}
 
 \begin{table}[!htb]
-	\caption[Atores]{RelaÁ„o Casos de Uso}
+	\caption[Atores]{Rela√ß√£o Casos de Uso}
 	\label{tab:correlacao}
 	\centering
 	\begin{tabular}{c|c}
-		Casos de Uso & Peso  \\ \hline
-		Login        & 3     \\
-		Registrar    & 1     \\
+		Casos de Uso 		& Peso  \\ \hline
+		Login       		& 3     \\
+		Registrar    		& 1     \\
+		Visualizar Feed	& 3     \\
+		Postar Imagem		& 3     \\
+		Acessar Perfil	& 2     \\
+		Dar Like				& 3     \\
+		Fazer Coment√°rio	& 2     \\
 	\end{tabular}
 \end{table}
 
 
 \begin{table}[!htb]
-	\caption[TPNACU]{Total de Pesos n„o ajustados dos Casos de Uso}
+	\caption[TPNACU]{Total de Pesos n√£o ajustados dos Casos de Uso}
 	\label{tab:correlacao}
 	\centering
 	\begin{tabular}{c|c|c|c}
 		Complexidade & Qtde. Casos de Uso & Peso & Resultado	\\ \hline
-		1 			 &  				? &	1	 &	  ? 		\\
-		2 			 &  				? &	2	 &	  ? 		\\
-		3 			 &  				? &	3	 &	  ? 		\\ \hline
-		\multicolumn{4}{l}{Total de Pesos n„o ajustados dos Casos de Uso(TPNACU) = ?} \\
+		1 			 &  		1		  &	1	 &	  1 		\\
+		2 			 &  		2		  &	2	 &	  4 		\\
+		3 			 &  		4		  &	3	 &	  12 		\\ \hline
+		\multicolumn{4}{l}{Total de Pesos n√£o ajustados dos Casos de Uso(TPNACU) = 17} \\
 	\end{tabular}
 \end{table}
+
+PTNA = TPNAA + TPNACU
+PTNA = 5 + 17
+PTNA = 22
 
 \begin{table}[!htb]
 \caption[FCA]{Fator de Complexidade Ambiental}
 	\label{tab:correlacao}
 	\centering
 	\begin{tabular}{c|c|c|c|c}
-		Fator & Descricao										& Peso	& Valor & EFator   \\   \hline
-		F1	  & Familiaridade com Processo Iterativo Unificado	& 1.5	&	 ?  &		?		\\
-		F2	  & Experiencia na AplicaÁ„o						& 0.5	&	 ?  &		? 	 	\\
-		F3 	  & ExperiÍncia em orientaÁ„o a objetos				& 1		&  ?    &		? 		\\
-		F4 	  & Capacidade de LideranÁa de An·lise				& 0.5	&	 ?  &		? 		\\
-		F5 	  & MotivaÁ„o										& 1		&	 ?  &		? 		\\
-		F6 	  & Estabilidade dos Requisitos						& 2		&  ?    &		? 		\\
-		F7 	  & Consultores Part-Time							& -1	&	 ?  &		? 		\\
-		F8 	  & Dificuldade de ProgramaÁ„o na Linguagem			& -1	&	 ?  &		? 		\\ \hline
+		Fator & Descricao										                    & Peso	& Valor & EFator   \\   \hline
+		F1	  & Familiaridade com Processo Iterativo Unificado	& 1.5	  &	 4    &		6		\\
+		F2	  & Experiencia na Aplica√ß√£o						            & 0.5	  &	 4    &		2 	 	\\
+		F3 	  & Experi√™ncia em orienta√ß√£o a objetos				      & 1		  &  4    &		4 		\\
+		F4 	  & Capacidade de Lideran√ßa de An√°lise				      & 0.5	  &	 3    &		1.5 		\\
+		F5 	  & Motiva√ß√£o										                    & 1		  &	 1    &		1 		\\
+		F6 	  & Estabilidade dos Requisitos						          & 2		  &  4    &		8 		\\
+		F7 	  & Consultores Part-Time							              & -1	  &	 0    &		0 		\\
+		F8 	  & Dificuldade de Programa√ß√£o na Linguagem			    & -1	  &	 2    &		-2 		\\ \hline
 		\multicolumn{5}{l}{Total(EFator) = ?}\\ \hline
-		\multicolumn{5}{l}{FCA => 1.4 + (-0.03 * EFator) = ?}\\
+		\multicolumn{5}{l}{FCA => 1.4 + (-0.03 * 20.5) = 0.785}\\
 	\end{tabular}
 \end{table}
 
 
 \begin{table}[!htb]
-\caption[FCT]{Fator de Complexidade TÈcnica}
+\caption[FCT]{Fator de Complexidade T√©cnica}
 	\label{tab:correlacao}
 	\centering
 	\begin{tabular}{c|c|c|c|c}
 		Fator & Descricao								   & Peso & Valor &     \\ \hline
-		T1	  & DistribuiÁ„o do sistema 				   & 2 	  &	  ?   &	    \\
-		T2	  & Respostas aos objetivos de desempenho      & 1 	  &	  ?   &	 	\\
-		T3 	  & EficiÍncia do usu·rio final                & 1 	  &	  ?   &		\\
-		T4 	  & Complexidade do Processo Interno           & 1 	  &	  ?   &		\\
-		T5 	  & CÛdigo deve ser reutilizado                & 1 	  &	  ?   &		\\
-		T6 	  & Facilidade de instalaÁ„o                   & 0.5  &	  ?   &		\\
-		T7 	  & Facilidade de uso                          & 0.5  &	  ?   &		\\
-		T8 	  & Portabilidade                              & 2	  &	  ?   &		\\
-		T9 	  & Facilidade de alterar                      & 1	  &	  ?   &		\\
-		T10	  & ConcorrÍncia                               & 1	  &	  ?   &		\\
-		T11	  & Features de seguranÁa                      & 1	  &	  ?   &		\\
-		T12	  & Acesso direto a dispositivos parceiros     & 1	  &	  ?   &		\\
-		T13	  & Treinamento especial aos usu·rios          & 1	  &	  ?   &		\\ \hline
-		\multicolumn{5}{l}{Total(TFator) = ?}\\ \hline
-		\multicolumn{5}{l}{FCT => 0.6 + (0.01 * TFator) = ?}\\
+		T1	  & Distribui√ß√£o do sistema 				  				 & 2 	  &	  5   &	  10	  \\
+		T2	  & Respostas aos objetivos de desempenho      & 1 	  &	  3   &	 	3  \\
+		T3 	  & Efici√™ncia do usu√°rio final                & 1 	  &	  3   &		3	  \\
+		T4 	  & Complexidade do Processo Interno           & 1 	  &	  5   &		5	  \\
+		T5 	  & C√≥digo deve ser reutilizado                & 1 	  &	  4   &		4	  \\
+		T6 	  & Facilidade de instala√ß√£o                   & 0.5  &	  5   &		2.5	  \\
+		T7 	  & Facilidade de uso                          & 0.5  &	  5   &		2.5	  \\
+		T8 	  & Portabilidade                              & 2	  &	  4   &		8	  \\
+		T9 	  & Facilidade de alterar                      & 1	  &	  2   &		2	  \\
+		T10	  & Concorr√™ncia                               & 1	  &	  4   &		4	  \\
+		T11	  & Features de seguran√ßa                      & 1	  &	  2   &		2	  \\
+		T12	  & Acesso direto a dispositivos parceiros     & 1	  &	  0   &		0	  \\
+		T13	  & Treinamento especial aos usu√°rios          & 1	  &	  0   &		0	   \\ \hline
+		\multicolumn{5}{l}{Total(TFator) = 46}\\ \hline
+		\multicolumn{5}{l}{FCT => 0.6 + (0.01 * 46) = 1.06}\\
 	\end{tabular}
 \end{table}
 
+PTUC = PTNA * FCT* FCA
 
+PTUC = 22 * 0.785 * 1.06
 
+PTUC = 18.3
+
+Estimativas com os pontos obtidos
+
+Sugest√£o de Karner = PTUC * 20
+
+Sugest√£o de Karner = 18.3 * 5 = 91.5 horas
+
+91.5 horas / (3 horas por dia * 2 pessoas) = 15.25 dias
+
+15.25 dias / 5 dias por semana =  3 semanas
+
+91.5 horas *  75 reais por hora = R$6862,50 total manuten√ß√£o
+
+Pre√ßo da hora
 % Describe the cost estimating method 
-\subsection{MÈtodo da estimativa de custo}
+\subsection{M√©todo da estimativa de custo}
 
 Pontos por caso de uso
 
 % Documentation 
-\section{DocumentaÁ„o}
+\section{Documenta√ß√£o}
 
 % Software Quality Plan
 \subsection{Plano de qualidade do software}
@@ -161,12 +187,12 @@ Pontos por caso de uso
 Trello
 
 % Configuration Management Plan
-\subsection{Plano de Gerenciamento de ConfiguraÁ„o}
+\subsection{Plano de Gerenciamento de Configura√ß√£o}
 
 GitHub
 
 % Measurement Plan
-\subsection{Plano de MediÁ„o}
+\subsection{Plano de Medi√ß√£o}
 
 % Development documents
 \subsection{Documentos de desenvolvimento}
@@ -178,16 +204,16 @@ GitHub
 \subsubsection{Modelo Relacional} 
 
 % Maintenance manuals
-\subsection{Manuais de manutenÁ„o}
+\subsection{Manuais de manuten√ß√£o}
 
 % Verification Plan
-\subsection{Plano de VerificaÁ„o}
+\subsection{Plano de Verifica√ß√£o}
 
 % Validation Plan
-\subsection{Plano de validaÁ„o}
+\subsection{Plano de valida√ß√£o}
 
 % Test Plan, Test Procedures, and Test Reports
-\subsection{Plano de teste, procedimentos de teste e relatÛrios de teste}
+\subsection{Plano de teste, procedimentos de teste e relat√≥rios de teste}
 
 \subsubsection{Plano de teste}
 
@@ -197,16 +223,16 @@ Teste Funcional Caixa Preta.
 
 Utilizar o software manualmente.
 
-\subsubsection{RelatÛrios de Teste}
+\subsubsection{Relat√≥rios de Teste}
 
 
 % Training Plan 
 \subsection{Plano de Treinamento}
 
- Ser· apresentado ao usu·rio uma lista de modificaÁıes com prints das telas de antes e depois da manutenÁ„o. 
+ Ser√° apresentado ao usu√°rio uma lista de modifica√ß√µes com prints das telas de antes e depois da manuten√ß√£o. 
 
 % User?s Manual(s)
-\subsection{Manual(s) do Usu·rio}
+\subsection{Manual(s) do Usu√°rio}
 
 Explicar as novas funcionalidades e como funcionam.
 
@@ -214,7 +240,7 @@ Explicar as novas funcionalidades e como funcionam.
 \section{Gerenciamento de dados}
 
 % Identify repositories 
-\subsection{RepositÛrios}
+\subsection{Reposit√≥rios}
 
 % Other resource requirements (if needed)
-\section{Outros requisitos de recursos (se necess·rio)}
+\section{Outros requisitos de recursos (se necess√°rio)}
