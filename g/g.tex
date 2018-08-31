@@ -37,17 +37,26 @@ Acesso à internet
 % Special procedural requirements (e.g., security, access rights, and documentation control)
 \section{Requisitos processuais especiais (por exemplo, segurança, direitos de acesso e documentação ao controle)}
 
+\pagebreak
+
 % Cost estimating 
 \section{Estimativa de custo}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=\textwidth]{./g/casodeuso.png}
+	\caption{Diagrama de caso de uso}
+	\label{fig:casoDeUso}
+\end{figure}
 
 \begin{table}[!htb]
 	\caption[Atores]{Relação de atores e seus respectivos pesos}
 	\label{tab:correlacao}
 	\centering
 	\begin{tabular}{c|c}
-		Atores  & Peso \\ \hline
-		Cliente & 3 	 \\
-		Site    & 2 	 \\
+		Atores  & Peso 	\\ \hline
+		Cliente & 3    	\\
+		Site    & 2		\\
 	\end{tabular}
 \end{table}
 
@@ -56,11 +65,11 @@ Acesso à internet
 	\label{tab:correlacao}
 	\centering
 	\begin{tabular}{c|c|c|c}
-		Complexidade & Qtde. Atores & Peso & Resultado   \\ \hline
-		1 					 & 0						&	1		 &	  0 			 \\
-		2 					 & 1						&	2		 &	  2 			 \\
-		3 					 & 1						&	3		 &	  3 			 \\ \hline
-		\multicolumn{4}{l}{Total de Pesos não Ajustados dos Atores(TPNAA) = 5} \\
+		Complexidade 		 & Qtde. Atores 			& Peso 		 & Resultado	\\ \hline
+		1 					 & 0						&	1		 &	  0 	 	\\
+		2 					 & 1						&	2		 &	  2 	 	\\
+		3 					 & 1						&	3		 &	  3 	 	\\ \hline
+		\multicolumn{4}{l}{Total de Pesos não Ajustados dos Atores(TPNAA) = 5}	 	\\
 	\end{tabular}
 \end{table}
 
@@ -81,11 +90,11 @@ Acesso à internet
 	\label{tab:correlacao}
 	\centering
 	\begin{tabular}{c|c|c|c}
-		Complexidade & Qtde. Casos de Uso & Peso & Resultado   \\ \hline
-		1 					 &  				?					&	1		 &	  ? 			 \\
-		2 					 &  				?					&	2		 &	  ? 			 \\
-		3 					 &  				?					&	3		 &	  ? 			 \\ \hline
-		\multicolumn{4}{l}{Total de Pesos não ajustados dos Casos de Uso(TPNACU) = ?}\\
+		Complexidade & Qtde. Casos de Uso & Peso & Resultado	\\ \hline
+		1 			 &  				? &	1	 &	  ? 		\\
+		2 			 &  				? &	2	 &	  ? 		\\
+		3 			 &  				? &	3	 &	  ? 		\\ \hline
+		\multicolumn{4}{l}{Total de Pesos não ajustados dos Casos de Uso(TPNACU) = ?} \\
 	\end{tabular}
 \end{table}
 
@@ -94,15 +103,15 @@ Acesso à internet
 	\label{tab:correlacao}
 	\centering
 	\begin{tabular}{c|c|c|c|c}
-		Fator 			 & Descricao 																			& Peso & Valor & EFator   \\ \hline
-		F1					 & Familiaridade com Processo Iterativo Unificado &	1.5  &	  ?  &		?		  \\
-		F2					 & Experiencia na Aplicação												&	0.5	 &	  ?  &		? 	 	\\
-		F3 					 & Experiência em orientação a objetos						&	1		 &	  ?  &		? 		\\
-		F4 					 & Capacidade de Liderança de Análise							&	0.5	 &	  ?  &		? 		\\
-		F5 					 & Motivação																			&	1		 &	  ?  &		? 		\\
-		F6 					 & Estabilidade dos Requisitos										&	2		 &	  ?  &		? 		\\
-		F7 					 & Consultores Part-Time													&	-1	 &	  ?  &		? 		\\
-		F8 					 & Dificuldade de Programação na Linguagem				&	-1	 &	  ?  &		? 		\\ \hline
+		Fator & Descricao										& Peso	& Valor & EFator   \\   \hline
+		F1	  & Familiaridade com Processo Iterativo Unificado	& 1.5	&	 ?  &		?		\\
+		F2	  & Experiencia na Aplicação						& 0.5	&	 ?  &		? 	 	\\
+		F3 	  & Experiência em orientação a objetos				& 1		&  ?    &		? 		\\
+		F4 	  & Capacidade de Liderança de Análise				& 0.5	&	 ?  &		? 		\\
+		F5 	  & Motivação										& 1		&	 ?  &		? 		\\
+		F6 	  & Estabilidade dos Requisitos						& 2		&  ?    &		? 		\\
+		F7 	  & Consultores Part-Time							& -1	&	 ?  &		? 		\\
+		F8 	  & Dificuldade de Programação na Linguagem			& -1	&	 ?  &		? 		\\ \hline
 		\multicolumn{5}{l}{Total(EFator) = ?}\\ \hline
 		\multicolumn{5}{l}{FCA => 1.4 + (-0.03 * EFator) = ?}\\
 	\end{tabular}
@@ -114,20 +123,20 @@ Acesso à internet
 	\label{tab:correlacao}
 	\centering
 	\begin{tabular}{c|c|c|c|c}
-		Fator 			 & Descricao 																	& Peso & Valor &    \\ \hline
-		T1					 & Distribuição do sistema 										&	2		 &	  ?	 &	  \\
-		T2					 & Respostas aos objetivos de desempenho      &	1		 &	  ?  &	 	\\
-		T3 					 & Eficiência do usuário final                &	1		 &	  ?  &		\\
-		T4 					 & Complexidade do Processo Interno           &	1		 &	  ?  &		\\
-		T5 					 & Código deve ser reutilizado                &	1		 &	  ?  &		\\
-		T6 					 & Facilidade de instalação                   &	0.5  &	  ?  &		\\
-		T7 					 & Facilidade de uso                          &	0.5  &	  ?  &		\\
-		T8 					 & Portabilidade                              &	2		 &	  ?  &		\\
-		T9 					 & Facilidade de alterar                      &	1		 &	  ?  &		\\
-		T10					 & Concorrência                               &	1		 &	  ?  &		\\
-		T11					 & Features de segurança                      &	1		 &	  ?  &		\\
-		T12					 & Acesso direto a dispositivos parceiros     &	1		 &	  ?  &		\\
-		T13					 & Treinamento especial aos usuários          &	1		 &	  ?  &		\\ \hline
+		Fator & Descricao								   & Peso & Valor &     \\ \hline
+		T1	  & Distribuição do sistema 				   & 2 	  &	  ?   &	    \\
+		T2	  & Respostas aos objetivos de desempenho      & 1 	  &	  ?   &	 	\\
+		T3 	  & Eficiência do usuário final                & 1 	  &	  ?   &		\\
+		T4 	  & Complexidade do Processo Interno           & 1 	  &	  ?   &		\\
+		T5 	  & Código deve ser reutilizado                & 1 	  &	  ?   &		\\
+		T6 	  & Facilidade de instalação                   & 0.5  &	  ?   &		\\
+		T7 	  & Facilidade de uso                          & 0.5  &	  ?   &		\\
+		T8 	  & Portabilidade                              & 2	  &	  ?   &		\\
+		T9 	  & Facilidade de alterar                      & 1	  &	  ?   &		\\
+		T10	  & Concorrência                               & 1	  &	  ?   &		\\
+		T11	  & Features de segurança                      & 1	  &	  ?   &		\\
+		T12	  & Acesso direto a dispositivos parceiros     & 1	  &	  ?   &		\\
+		T13	  & Treinamento especial aos usuários          & 1	  &	  ?   &		\\ \hline
 		\multicolumn{5}{l}{Total(TFator) = ?}\\ \hline
 		\multicolumn{5}{l}{FCT => 0.6 + (0.01 * TFator) = ?}\\
 	\end{tabular}
@@ -180,11 +189,26 @@ GitHub
 % Test Plan, Test Procedures, and Test Reports
 \subsection{Plano de teste, procedimentos de teste e relatórios de teste}
 
+\subsubsection{Plano de teste}
+
+Teste Funcional Caixa Preta.
+
+\subsubsection{Procedimentos}
+
+Utilizar o software manualmente.
+
+\subsubsection{Relatórios de Teste}
+
+
 % Training Plan 
 \subsection{Plano de Treinamento}
 
+ Será apresentado ao usuário uma lista de modificações com prints das telas de antes e depois da manutenção. 
+
 % User?s Manual(s)
 \subsection{Manual(s) do Usuário}
+
+Explicar as novas funcionalidades e como funcionam.
 
 % Data management
 \section{Gerenciamento de dados}
